@@ -1,0 +1,10 @@
+.preloadingCard {
+   border: 1px solid #F3F3F3;
+   border-radius: 40px;
+   transition: all 0.3s ease;
+
+   &:hover {
+      box-shadow: 0px 14px 30px rgba(0, 0, 0, 0.05);
+      transform: translateY(-5px);
+   }
+}

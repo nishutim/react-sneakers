@@ -1,0 +1,24 @@
+.searchForm {
+   padding: 13px 18px;
+   border: 1px solid #F3F3F3;
+   border-radius: 10px;
+   display: flex;
+   align-items: center;
+   gap: 14px;
+   font-weight: 400;
+   font-size: 14px;
+   line-height: calc(17 / 14);
+   color: #C4C4C4;
+
+   input {
+      width: 100%;
+      outline: none;
+      border: none;
+      color: #8f8a8a;
+      font-size: 16px;
+
+      &::placeholder {
+         color: #C4C4C4;
+      }
+   }
+}

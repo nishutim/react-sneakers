@@ -1,0 +1,38 @@
+.pageHeader {
+   margin-bottom: 42px;
+   display: flex;
+   align-items: center;
+   gap: 21px;
+}
+
+.goBackBtn {
+   width: 35px;
+   height: 35px;
+   border: 1px solid #F2F2F2;
+   border-radius: 8px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background-color: transparent;
+   color: #d8d6d6;
+   transition: all 0.3s ease;
+
+   &:hover {
+      border-color: #FF8585;
+      color: #FF8585;
+      cursor: pointer;
+   }
+}
+
+.ordersList {
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+   gap: 40px;
+}
+
+.fallbackBlock {
+   padding: 50px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}

@@ -47,12 +47,18 @@ code {
   box-sizing: border-box;
 }
 
-html, body, #root {
+html, body {
   height: 100%;
 }
 
 body {
   font-family: 'Gilroy';
+}
+
+#root {
+  min-height: 100%;
   padding: 85px;
+  display: flex;
+  flex-direction: column;
   background-color: #E7F6FF;
 }

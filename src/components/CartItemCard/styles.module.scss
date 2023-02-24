@@ -1,0 +1,69 @@
+.card {
+   padding: 20px;
+   border: 1px solid #F3F3F3;
+   border-radius: 20px;
+   display: flex;
+   align-items: center;
+   gap: 16px;
+   background-color: #FFFFFF;
+
+   &Image {
+      flex: 0 0 85px;
+      height: 70px;
+      position: relative;
+
+      img {
+         position: absolute;
+         width: 100%;
+         height: 100%;
+         top: 0;
+         left: 0;
+         object-fit: cover;
+      }
+   }
+
+   &Info {
+      flex: 1 1 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+
+      h4,
+      b {
+         font-weight: 400;
+         font-size: 14px;
+         line-height: calc(17 / 14);
+      }
+
+      b {
+         font-weight: 700;
+      }
+   }
+}
+
+.removeBtn {
+   width: 32px;
+   height: 32px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border: 1px solid #DBDBDB;
+   border-radius: 8px;
+   background-color: #fff;
+   color: #DBDBDB;
+   transition: border-color 0.3s ease;
+
+   &Cross {
+      color: #bebbbb;
+      transition: color 0.3s ease;
+   }
+
+   &:hover {
+      cursor: pointer;
+      border-color: #FF8585;
+
+      .removeBtnCross {
+         color: #FF8585;
+      }
+   }
+}

@@ -1,0 +1,137 @@
+.card {
+   padding: 34px 30px;
+   border: 1px solid #F3F3F3;
+   border-radius: 40px;
+   background-color: #FFF;
+   display: flex;
+   flex-direction: column;
+   transition: all 0.2s ease;
+
+   &:hover {
+      box-shadow: 0px 14px 30px rgba(0, 0, 0, 0.05);
+      transform: translateY(-5px);
+   }
+
+   &Image {
+      position: relative;
+      margin-bottom: 14px;
+      padding-top: calc(112 / 150 * 100%);
+
+      img {
+         position: absolute;
+         width: 100%;
+         height: 100%;
+         top: 0;
+         left: 0;
+         object-fit: cover;
+      }
+   }
+
+   &Body {
+      display: flex;
+      flex-direction: column;
+   }
+
+   &Title {
+      margin-bottom: 14px;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: calc(17 / 14);
+   }
+
+   &Footer {
+      display: flex;
+      justify-content: space-between;
+   }
+
+   &Info {
+      display: flex;
+      flex-direction: column;
+
+      span {
+         margin-bottom: 2px;
+         font-weight: 500;
+         font-size: 11px;
+         line-height: 13px;
+         text-transform: uppercase;
+         color: #BDBDBD;
+      }
+
+      b {
+         font-weight: 700;
+         font-size: 14px;
+         line-height: 17px;
+      }
+   }
+}
+
+.cardBtn {
+   height: 32px;
+   width: 32px;
+   border: 1px solid #F2F2F2;
+   border-radius: 8px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background-color: transparent;
+   color: #d8d6d6;
+   transition: all 0.3s ease;
+
+   &:disabled,
+   &:hover:disabled {
+      border-color: lighten(#BDBDBD, 20%);
+      background: lighten(#BDBDBD, 20%);
+      color: darken(#BDBDBD, 10%);
+   }
+
+   &:hover {
+      cursor: pointer;
+   }
+
+   &Like {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 1;
+
+      &:hover,
+      &Active {
+         border-color: #FEF0F0;
+         background-color: #FEF0F0;
+         color: #FF8585;
+      }
+
+      &Active:hover {
+         border-color: darken(#FEF0F0, 5%);
+         background-color: darken(#FEF0F0, 5%);
+         color: darken(#FF8585, 5%);
+      }
+   }
+
+   &Add {
+      &:hover {
+         border-color: #61dd78;
+         color: #3CC755;
+
+         .cardBtnAddCheck {
+            transform: scale(1.15);
+         }
+      }
+
+      &Check {
+         transition: transform 0.3s ease;
+      }
+
+      &Active {
+         border-color: #6fe985;
+         background: linear-gradient(180deg, #89F09C 0%, #3CC755 100%);
+         color: white;
+
+         &:hover {
+            border-color: #6fe985;
+            background: linear-gradient(180deg, darken(#89F09C, 0%) 0%, darken(#3CC755, 10%) 100%);
+            color: white;
+         }
+      }
+   }
+}

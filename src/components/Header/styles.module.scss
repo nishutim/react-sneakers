@@ -49,21 +49,20 @@
       transition: color 0.3s ease;
 
       &:hover,
-      &.active {
+      &Active {
          cursor: pointer;
          color: #FF8585;
       }
    }
+}
 
-   .cartBtn {
-
-      gap: 10px;
-      border: none;
-      outline: none;
-      background-color: transparent;
-      font-family: inherit;
-      font-weight: 600;
-      font-size: 14px;
-      line-height: 1.21;
-   }
+.cartBtn {
+   gap: 8px;
+   border: none;
+   outline: none;
+   background-color: transparent;
+   font-family: inherit;
+   font-weight: 600;
+   font-size: 14px;
+   line-height: calc(17 / 14);
 }

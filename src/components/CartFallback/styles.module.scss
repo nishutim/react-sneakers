@@ -1,0 +1,76 @@
+.fallbackCard {
+   max-width: 285px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+
+   &Image {
+      position: relative;
+      width: 120px;
+      height: 120px;
+      margin-bottom: 20px;
+
+      img {
+         position: absolute;
+         width: 100%;
+         height: 100%;
+         left: 0;
+         top: 0;
+         object-fit: cover;
+      }
+   }
+
+   h4 {
+      font-weight: 700;
+      font-size: 22px;
+      line-height: calc(27 / 22);
+      margin-bottom: 10px;
+   }
+
+   p {
+      text-align: center;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: calc(24 / 16);
+      opacity: 0.4;
+      margin-bottom: 40px;
+   }
+
+   &Btn {
+      min-width: 245px;
+      min-height: 55px;
+      padding: 0 30px;
+      border: none;
+      border-radius: 18px;
+      display: flex;
+      align-items: center;
+      background-color: #9DD458;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: calc(19 / 16);
+      color: #FFF;
+      transition: all 0.3s ease;
+
+      &Arrow {
+         margin-right: 20px;
+         transition: all 0.3s ease;
+      }
+
+      &:hover {
+         cursor: pointer;
+         background-color: darken(#9DD458, 10%);
+
+         .fallbackCardBtnArrow {
+            transform: translateX(-5px);
+         }
+      }
+
+      &:active {
+         background-color: #9DD458;
+      }
+   }
+}
+
+.titleGreen {
+   color: #9DD458;
+}
